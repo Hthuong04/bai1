@@ -1,6 +1,5 @@
 package com.example.bt_layout_constraint;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -8,11 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -27,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_login);
         editTextInput = findViewById(R.id.inputUsername);
-        editTextInputPass = findViewById(R.id.inputPassword);
+        editTextInputPass = findViewById(R.id.inputEmail);
         buttonShow = findViewById(R.id.btn_login);
         textViewOutput = findViewById(R.id.textView7);
         textViewOutput1 = findViewById(R.id.textView8);// Kiểm tra ID trong layout

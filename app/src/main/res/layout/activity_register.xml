@@ -40,15 +40,16 @@
         android:paddingBottom="10dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo"
-        tools:layout_editor_absoluteX="25dp"
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/inputPassword"
+        android:id="@+id/inputEmail"
         android:layout_width="361dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/baseline_emai"
         android:drawablePadding="10dp"
@@ -61,15 +62,17 @@
         android:paddingBottom="10dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/inputUsername"
+        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintStart_toStartOf="@+id/inputUsername"
         app:layout_constraintTop_toBottomOf="@+id/inputUsername"
-        tools:layout_editor_absoluteX="25dp"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/inputPassword"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_width="351dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/baseline_security"
         android:drawablePadding="10dp"
@@ -82,16 +85,15 @@
         android:paddingBottom="10dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/inputPassword"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="@+id/inputPassword"
-        app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
+        app:layout_constraintEnd_toEndOf="@+id/inputEmail"
+        app:layout_constraintStart_toStartOf="@+id/inputEmail"
+        app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
 
     <EditText
         android:id="@+id/inputConfirmPassword"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_width="350dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/baseline_security"
         android:drawablePadding="10dp"
@@ -112,10 +114,11 @@
         android:id="@+id/btnRegister"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/btn_bg"
         android:text="Register"
         app:layout_constraintEnd_toEndOf="@+id/inputConfirmPassword"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/inputConfirmPassword"
         app:layout_constraintTop_toBottomOf="@+id/inputConfirmPassword" />
 
