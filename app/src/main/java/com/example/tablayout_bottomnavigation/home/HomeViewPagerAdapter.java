@@ -23,7 +23,7 @@ public class HomeViewPagerAdapter extends FragmentStatePagerAdapter {
             case 0:
                 return new Tab_Item_Fragment();
             case 1:
-                return new Tab_Item_Fragment();
+                return new Tab_Catalog_Fragment();
             case 2:
                 return new Tab_Sales_Fragment();
             default:
