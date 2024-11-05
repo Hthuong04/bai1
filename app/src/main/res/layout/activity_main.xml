@@ -25,7 +25,7 @@
         android:id="@+id/btncontact"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:text="Đọc toàn bộ danh bạ"
+        android:text="Đọc danh bạ"
         android:textColor="@color/black"
         android:background="@color/yellow"
         android:layout_marginTop="50dp"
@@ -36,9 +36,18 @@
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:background="@color/yellow"
-        android:text="Đọc toàn bộ tin nhắn"
+        android:text="Đọc tin nhắn"
         android:textColor="@color/black"
         android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"/>
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCall_log"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@color/yellow"
+        android:text="Đọc lịch sử cuộc gọi"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
 </LinearLayout>

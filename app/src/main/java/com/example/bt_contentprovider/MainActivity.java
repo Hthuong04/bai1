@@ -1,6 +1,5 @@
 package com.example.bt_contentprovider;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnContact, btnMessage;
+    private Button btnContact, btnMessage, btnCallLog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,10 +32,16 @@ public class MainActivity extends AppCompatActivity {
                 xuLyMoManHinhTinNhan();
             }
         });
+        btnCallLog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                xuLyMoManHinhLichSuCuocGoi();
+            }
+        });
     }
 
     private void xuLyMoManHinhDanhBa(){
-        Intent intent = new Intent(MainActivity.this, ContactAct.class); // Sửa đổi ở đây
+        Intent intent = new Intent(MainActivity.this, ContactAct.class);
         startActivity(intent);
     }
 
@@ -45,8 +50,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    private void xuLyMoManHinhLichSuCuocGoi() {
+        Intent intent = new Intent(MainActivity.this, Call_log_Act.class);
+        startActivity(intent);
+    }
+
     private void addControl(){
         btnContact = findViewById(R.id.btncontact);
         btnMessage = findViewById(R.id.btnmessage);
+        btnCallLog = findViewById(R.id.btnCall_log); // Thêm ánh xạ cho btnCallLog
     }
 }
